@@ -1,0 +1,65 @@
+.finger0,
+.finger1,
+.finger2,
+.finger3,
+.finger4,
+.finger5,
+.evenFinger0,
+.evenFinger1,
+.evenFinger2,
+.evenFinger3,
+.evenFinger4,
+.evenFinger5 {
+  width: 300px;
+  height: 300px;
+}
+
+.finger0,
+.evenFinger0 {
+  background-color: red;
+  position: absolute;
+  z-index: 5;
+}
+
+.finger1,
+.evenFinger1 {
+  background-color: blue;
+  position: absolute;
+}
+
+.finger2,
+.evenFinger2 {
+  background-color: purple;
+  position: absolute;
+}
+
+.finger3,
+.evenFinger3 {
+  background-color: yellow;
+  position: absolute;
+}
+
+.finger4,
+.evenFinger4 {
+  background-color: green;
+  position: absolute;
+}
+
+.finger5,
+.evenFinger5 {
+  background-color: pink;
+  position: absolute;
+}
+
+.playAgain {
+  visibility: hidden;
+}
+
+body {
+  background-color: #fcfafa;
+}
+.evensImgContainer {
+  position: relative;
+  float: right;
+  margin-right: 400px;
+}
