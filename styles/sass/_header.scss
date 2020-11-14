@@ -1,0 +1,27 @@
+header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    margin: 0;
+    font-family: "Rubik Mono One", sans-serif;
+    font-size: 15rem;
+    color: #5C5C5C;
+  }
+  p {
+    font-family: "Be Vietnam", sans-serif;
+    font-size: 3rem;
+    max-width: 1000px;
+    color: #746d69;
+    text-align: center;
+    line-height: 50px;
+  }
+}
+.hidden {
+  display: none;
+}
+//font-family: 'Be Vietnam', sans-serif;
+
+//font-family: 'Rubik Mono One', sans-serif;

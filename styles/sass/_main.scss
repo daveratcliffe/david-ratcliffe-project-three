@@ -1,0 +1,80 @@
+
+main {
+  height: 100vh;
+}
+.gameArea {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+// .finger0,
+// .finger1,
+// .finger2,
+// .finger3,
+// .finger4,
+// .finger5,
+// .evenFinger0,
+// .evenFinger1,
+// .evenFinger2,
+// .evenFinger3,
+// .evenFinger4,
+// .evenFinger5 {
+//   width: 300px;
+//   height: 300px;
+//   overflow: hidden;
+// }
+
+.finger0,
+.evenFinger0 {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.finger1,
+.evenFinger1,
+.finger2,
+.evenFinger2,
+.finger3,
+.evenFinger3,
+.finger4,
+.evenFinger4,
+.finger5,
+.evenFinger5 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.playAgain {
+  visibility: hidden;
+}
+
+.evensImgContainer,
+.oddsImgContainer {
+  position: relative;
+  height: 400px;
+  width: 400px;
+}
+.oddsImgContainer {
+  grid-column: 2 / 3;
+}
+.optionContainer,
+.victoryStatement {
+  width: 300px;
+  text-align: center;
+}
+.numberOption {
+  width: 30px;
+  height: 30px;
+  background-image: url(../../assets/fingerprint1.png);
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+}

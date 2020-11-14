@@ -8,40 +8,124 @@
       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./styles/style.css"/>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Be+Vietnam:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/png" href="./assets/favicon.png">
     <title>Play Choosies</title>
   </head>
   <body>
-    <main>
+    <header class="wrapper hidden">
+      <h1>Choosies</h1>
+      <p>
+        Choosies is a game with origins that date back to ancient
+        Greece. The rules are simple. There are two players. One player is even, and
+        the other is odd. The players choose to raise any number of fingers on one hand and displays it to the other. The fingers are then added together. If the sum of all fingers are even, you win. If it's odd, your
+        opponent wins.
+      </p>
+      <a href="#game">let's play!</a>
+    </header>
+    <main class="wrapper" id="game">
+      <div class="scoreCounter">
+        <h2>Even</h2>
+        <h2 class="evenScore"></h2>
+        <button class="scoreReset">Reset</button>
+        <h2>Odd</h2>
+        <h2 class="oddScore"></h2>
+      </div>
       <section class="gameArea">
         <div class="evens">
           <div class="evensImgContainer">
-            <div class="evenFinger0"></div>
-            <div class="handReset evenFinger1"></div>
-            <div class="handReset evenFinger2"></div>
-            <div class="handReset evenFinger3"></div>
-            <div class="handReset evenFinger4"></div>
-            <div class="handReset evenFinger5"></div>
+            <div class="evenFinger0">
+              <img
+                src="./assets/noFingersEvens.jpg"
+                alt="even player's hand with no fingers up"
+              />
+            </div>
+            <div class="handReset evenFinger1">
+              <img
+                src="./assets/oneFingerEvens.jpg"
+                alt="even player's hand with one finger up"
+              />
+            </div>
+            <div class="handReset evenFinger2">
+              <img
+                src="./assets/twoFingerEvens.jpg"
+                alt="even player's hand with two fingers up"
+              />
+            </div>
+            <div class="handReset evenFinger3">
+              <img
+                src="./assets/threeFingerEvens.jpg"
+                alt="even player's hand with three fingers up"
+              />
+            </div>
+            <div class="handReset evenFinger4">
+              <img
+                src="./assets/fourFingerEvens.jpg"
+                alt="even player's hand with four fingers up"
+              />
+            </div>
+            <div class="handReset evenFinger5">
+              <img
+                src="./assets/fiveFingerEvens.jpg"
+                alt="even player's hand with five fingers up"
+              />
+            </div>
           </div>
-          <div class="optionContainer"></div>
-          <button class="numberOption" value="1">1</button>
-          <button class="numberOption" value="2">2</button>
-          <button class="numberOption" value="3">3</button>
-          <button class="numberOption" value="4">4</button>
-          <button class="numberOption" value="5">5</button>
+          <div class="optionContainer">
+            <button class="numberOption" value="1"><img src="./assets/fingerprint1.png" alt="1"></button>
+            <button class="numberOption" value="2">2</button>
+            <button class="numberOption" value="3">3</button>
+            <button class="numberOption" value="4">4</button>
+            <button class="numberOption" value="5">5</button>
+          </div>
         </div>
         <div class="victoryStatement">
           <h2 class="winSum"></h2>
           <h2 class="winDeclaration"></h2>
           <button class="playAgain">Play Again</button>
         </div>
-        <div class="odds">
-          <div class="finger0"></div>
-          <div class="handReset finger1"></div>
-          <div class="handReset finger2"></div>
-          <div class="handReset finger3"></div>
-          <div class="handReset finger4"></div>
-          <div class="handReset finger5"></div>
+        <div class="oddsImgContainer">
+          <div class="finger0">
+            <img
+              src="./assets/noFingersOdds.jpg"
+              alt="odd player's hand with no fingers up"
+            />
+          </div>
+          <div class="handReset finger1">
+            <img
+              src="./assets/oneFingerOdds.jpg"
+              alt="odd player's hand with one finger up"
+            />
+          </div>
+          <div class="handReset finger2">
+            <img
+              src="./assets/twoFingerOdds.jpg"
+              alt="odd player's hand with one finger up"
+            />
+          </div>
+          <div class="handReset finger3">
+            <img
+              src="./assets/threeFingersOdds.jpg"
+              alt="odd player's hand with three fingers up"
+            />
+          </div>
+          <div class="handReset finger4">
+            <img
+              src="./assets/fourFingersOdds.jpg"
+              alt="odd player's hand with four fingers up"
+            />
+          </div>
+          <div class="handReset finger5">
+            <img
+              src="./assets/fiveFingersOdds.jpg"
+              alt="odd player's hand with five fingers up"
+            />
+          </div>
         </div>
       </section>
     </main>
