@@ -33,12 +33,6 @@ myApp.handleChoiceClick = function () {
     $('.oddScore').html(myApp.opponentScore);
   }
 };
-myApp.resetScores = function () {
-  myApp.userScore = 0;
-  $('.evenScore').html(myApp.userScore);
-  myApp.opponentScore = 0;
-  $('.oddScore').html(myApp.opponentScore);
-};
 // create a play again button the resets the code
 myApp.handlePlayAgainClick = function () {
   $('.handReset').css('z-index', '0');
