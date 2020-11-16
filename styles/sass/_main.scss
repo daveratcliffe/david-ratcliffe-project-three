@@ -1,29 +1,39 @@
 main {
   height: 100vh;
-}
-.gameArea {
-  width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  .gameArea {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .evenAndOddWide {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    h2 {
+      font-family: "Rubik", sans-serif;
+      font-size: 4rem;
+      font-weight: 700;
+      color: #37383c;
+      text-transform: uppercase;
+    }
+    .evenTitle {
+      margin-left: 70px;
+    }
+    .oddTitle {
+      margin-right: 70px;
+    }
+  }
 }
-// .finger0,
-// .finger1,
-// .finger2,
-// .finger3,
-// .finger4,
-// .finger5,
-// .evenFinger0,
-// .evenFinger1,
-// .evenFinger2,
-// .evenFinger3,
-// .evenFinger4,
-// .evenFinger5 {
-//   width: 300px;
-//   height: 300px;
-//   overflow: hidden;
-// }
-
+.evensImgContainer,
+.oddsImgContainer {
+  position: relative;
+  height: 400px;
+  width: 400px;
+}
 .finger0,
 .evenFinger0 {
   position: absolute;
@@ -33,7 +43,9 @@ main {
   left: 0;
   right: 0;
 }
-
+.oddsImgContainer {
+  margin-bottom: 50px;
+}
 .finger1,
 .evenFinger1,
 .finger2,
@@ -50,24 +62,14 @@ main {
   left: 0;
   right: 0;
 }
-
-.playAgain {
-  visibility: hidden;
-}
-
-.evensImgContainer,
-.oddsImgContainer {
-  position: relative;
-  height: 400px;
-  width: 400px;
-}
-.oddsImgContainer {
-  grid-column: 2 / 3;
-}
-.optionContainer,
 .victoryStatement {
   width: 300px;
   text-align: center;
+}
+.optionContainer {
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
 }
 .numberOption {
   width: 40px;
@@ -78,7 +80,40 @@ main {
   margin: 5px;
   cursor: pointer;
 }
+.winSum,
+.winDeclaration {
+  font-family: "Rubik", sans-serif;
+  font-size: 3rem;
+  color: #746d69;
+  text-transform: uppercase;
+}
+.winDeclaration {
+  font-weight: 700;
+}
+
+.playAgain {
+  visibility: hidden;
+  margin-top: 30px;
+  padding: 15px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  text-decoration: none;
+  border: solid 2px;
+  border-color: #746d69;
+  color: #37383c;
+  text-transform: uppercase;
+}
 .numberOption:hover,
-.numberOption:focus {
-  background-color: #949494;
+.numberOption:focus,
+.playAgain:hover,
+.playAgain:focus {
+  background-color: #746d69;
+}
+.playAgain:hover,
+.playAgain:focus {
+  color: #ffffff;
+}
+.evenAndOddHeight {
+  display: none;
 }

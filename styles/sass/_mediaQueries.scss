@@ -1,0 +1,92 @@
+@media screen and (max-width: 1313px) {
+  .evensImgContainer,
+  .oddsImgContainer {
+    height: 300px;
+    width: 300px;
+  }
+}
+@media screen and (max-width: 1076px) {
+  .evensImgContainer,
+  .oddsImgContainer {
+    height: 250px;
+    width: 250px;
+  }
+  .numberOption {
+    width: 30px;
+    height: 30px;
+  }
+  .victoryStatement {
+    width: 200px;
+  }
+  .winSum,
+  .winDeclaration {
+    font-size: 2rem;
+  }
+  .playAgain {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 845px) {
+  header {
+    h1 {
+      font-size: 7rem;
+    }
+    p {
+      font-size: 2rem;
+    }
+  }
+  main {
+    height: 100%;
+  }
+  .gameArea {
+    flex-direction: column-reverse;
+    .finger1,
+    .evenFinger1,
+    .finger2,
+    .evenFinger2,
+    .finger3,
+    .evenFinger3,
+    .finger4,
+    .evenFinger4,
+    .finger5,
+    .evenFinger5 {
+      transform: rotate(-90deg);
+    }
+    .finger0,
+    .evenFinger0 {
+      transform: rotate(-90deg);
+    }
+    .playAgain {
+      margin-bottom: 30px;
+      margin-top: 10px
+    }
+    .evenAndOddHeight {
+      display: block;
+      font-family: "Rubik", sans-serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #37383c;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+  .evenAndOddWide h2 {
+    display: none;
+  }
+  .numberOption {
+    margin-bottom: 50px;
+  }
+  .evensImgContainer,
+  .oddsImgContainer {
+    height: 200px;
+    width: 200px;
+  }
+}
+@media screen and (max-width: 430px) {
+  header {
+    height: 100%;
+  }
+  .oddScore{
+    margin-top: 40px;
+  }
+}

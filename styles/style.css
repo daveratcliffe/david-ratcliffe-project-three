@@ -284,13 +284,14 @@ header {
 
 header h1 {
   margin: 0;
-  font-family: "Rubik Mono One", sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
   font-size: 15rem;
-  color: #5C5C5C;
+  color: #37383c;
 }
 
 header p {
-  font-family: "Be Vietnam", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 3rem;
   max-width: 1000px;
   color: #746d69;
@@ -302,11 +303,40 @@ header p {
   display: none;
 }
 
-main {
-  height: 100vh;
+a {
+  margin-top: 30px;
+  padding: 15px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  text-decoration: none;
+  border: solid 2px;
+  border-color: #746d69;
+  color: #37383c;
+  text-transform: uppercase;
 }
 
-.gameArea {
+a:hover,
+a:focus {
+  color: white;
+  background-color: #746d69;
+}
+
+main {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .gameArea {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -319,6 +349,39 @@ main {
           align-items: center;
 }
 
+main .evenAndOddWide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+main .evenAndOddWide h2 {
+  font-family: "Rubik", sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #37383c;
+  text-transform: uppercase;
+}
+
+main .evenAndOddWide .evenTitle {
+  margin-left: 70px;
+}
+
+main .evenAndOddWide .oddTitle {
+  margin-right: 70px;
+}
+
+.evensImgContainer,
+.oddsImgContainer {
+  position: relative;
+  height: 400px;
+  width: 400px;
+}
+
 .finger0,
 .evenFinger0 {
   position: absolute;
@@ -327,6 +390,10 @@ main {
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+.oddsImgContainer {
+  margin-bottom: 50px;
 }
 
 .finger1,
@@ -346,27 +413,19 @@ main {
   right: 0;
 }
 
-.playAgain {
-  visibility: hidden;
-}
-
-.evensImgContainer,
-.oddsImgContainer {
-  position: relative;
-  height: 400px;
-  width: 400px;
-}
-
-.oddsImgContainer {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2 / 3;
-}
-
-.optionContainer,
 .victoryStatement {
   width: 300px;
   text-align: center;
+}
+
+.optionContainer {
+  max-width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .numberOption {
@@ -379,7 +438,143 @@ main {
   cursor: pointer;
 }
 
+.winSum,
+.winDeclaration {
+  font-family: "Rubik", sans-serif;
+  font-size: 3rem;
+  color: #746d69;
+  text-transform: uppercase;
+}
+
+.winDeclaration {
+  font-weight: 700;
+}
+
+.playAgain {
+  visibility: hidden;
+  margin-top: 30px;
+  padding: 15px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  text-decoration: none;
+  border: solid 2px;
+  border-color: #746d69;
+  color: #37383c;
+  text-transform: uppercase;
+}
+
 .numberOption:hover,
-.numberOption:focus {
-  background-color: #949494;
+.numberOption:focus,
+.playAgain:hover,
+.playAgain:focus {
+  background-color: #746d69;
+}
+
+.playAgain:hover,
+.playAgain:focus {
+  color: #ffffff;
+}
+
+.evenAndOddHeight {
+  display: none;
+}
+
+@media screen and (max-width: 1313px) {
+  .evensImgContainer,
+  .oddsImgContainer {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 1076px) {
+  .evensImgContainer,
+  .oddsImgContainer {
+    height: 250px;
+    width: 250px;
+  }
+  .numberOption {
+    width: 30px;
+    height: 30px;
+  }
+  .victoryStatement {
+    width: 200px;
+  }
+  .winSum,
+  .winDeclaration {
+    font-size: 2rem;
+  }
+  .playAgain {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 845px) {
+  header h1 {
+    font-size: 7rem;
+  }
+  header p {
+    font-size: 2rem;
+  }
+  main {
+    height: 100%;
+  }
+  .gameArea {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .gameArea .finger1,
+  .gameArea .evenFinger1,
+  .gameArea .finger2,
+  .gameArea .evenFinger2,
+  .gameArea .finger3,
+  .gameArea .evenFinger3,
+  .gameArea .finger4,
+  .gameArea .evenFinger4,
+  .gameArea .finger5,
+  .gameArea .evenFinger5 {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  .gameArea .finger0,
+  .gameArea .evenFinger0 {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  .gameArea .playAgain {
+    margin-bottom: 30px;
+    margin-top: 10px;
+  }
+  .gameArea .evenAndOddHeight {
+    display: block;
+    font-family: "Rubik", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #37383c;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .evenAndOddWide h2 {
+    display: none;
+  }
+  .numberOption {
+    margin-bottom: 50px;
+  }
+  .evensImgContainer,
+  .oddsImgContainer {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  header {
+    height: 100%;
+  }
+  .oddScore {
+    margin-top: 40px;
+  }
 }
