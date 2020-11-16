@@ -72,11 +72,3 @@ myApp.init = function () {
 $(function () {
   myApp.init();
 });
-
-// STRECH GOALS
-
-// create a counter so the user knows how many times they've won and lost
-// create a reset button so the user can reset the counter
-// allow the user to choose if they want to be evens or odds
-// add a visual countdown "one, two, three, shoot!" after the user picks to add some drama
-// Have an option to play the traditional Morra
