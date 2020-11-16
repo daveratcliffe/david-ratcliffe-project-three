@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Be+Vietnam:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Be+Vietnam:wght@400;600&family=Rubik:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="shortcut icon" type="image/png" href="./assets/favicon.png">
@@ -23,18 +23,16 @@
       <p>
         Choosies is a game with origins that date back to ancient
         Greece. The rules are simple. There are two players. One player is even, and
-        the other is odd. The players choose to raise any number of fingers on one hand and displays it to the other. The fingers are then added together. If the sum of all fingers are even, you win. If it's odd, your
-        opponent wins.
+        the other is odd. Each player chooses to raise any number of fingers on one hand. They then display their chosen number to each other. Both players' fingers are then added together. If the sum of all fingers are even, you win. If it's odd, your opponent wins.
       </p>
-      <a href="#game">let's play!</a>
+      <a href="#game">Start Playing</a>
     </header>
-    <main class="wrapper" id="game">
-      <div class="scoreCounter">
-        <h2>Even</h2>
+    <main class="wrapper hidden" id="game">
+      <div class="evenAndOddWide">
+        <h2 class="evenTitle">Even</h2>
         <h2 class="evenScore">0</h2>
-        <button class="scoreReset">Reset</button>
-        <h2>Odd</h2>
         <h2 class="oddScore">0</h2>
+        <h2 class="oddTitle">Odd</h2>
       </div>
       <section class="gameArea">
         <div class="evens">
@@ -76,12 +74,14 @@
               />
             </div>
           </div>
+          <h2 class="evenAndOddHeight">even</h2>
+          <h2 class="evenScore evenAndOddHeight">0</h2>
           <div class="optionContainer">
             <button class="numberOption" value="1"><img src="./assets/fingerprint1.png" alt="1"></button>
-            <button class="numberOption" value="2"><img src="./assets/fingerprint2.png" alt="2"></button></button>
-            <button class="numberOption" value="3"><img src="./assets/fingerprint3.png" alt="3"></button></button>
-            <button class="numberOption" value="4"><img src="./assets/fingerprint4.png" alt="4"></button></button>
-            <button class="numberOption" value="5"><img src="./assets/fingerprint5.png" alt="5"></button></button>
+            <button class="numberOption" value="2"><img src="./assets/fingerprint2.png" alt="2"></button>
+            <button class="numberOption" value="3"><img src="./assets/fingerprint3.png" alt="3"></button>
+            <button class="numberOption" value="4"><img src="./assets/fingerprint4.png" alt="4"></button>
+            <button class="numberOption" value="5"><img src="./assets/fingerprint5.png" alt="5"></button>
           </div>
         </div>
         <div class="victoryStatement">
@@ -127,6 +127,8 @@
             />
           </div>
         </div>
+        <h2 class="evenAndOddHeight">odd</h2>
+        <h2 class="oddScore evenAndOddHeight">0</h2>
       </section>
     </main>
     <script src="./script.js"></script>

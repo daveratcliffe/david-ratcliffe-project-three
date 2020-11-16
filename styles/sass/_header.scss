@@ -6,12 +6,13 @@ header {
   justify-content: center;
   h1 {
     margin: 0;
-    font-family: "Rubik Mono One", sans-serif;
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
     font-size: 15rem;
-    color: #5C5C5C;
+    color: #37383c;
   }
   p {
-    font-family: "Be Vietnam", sans-serif;
+    font-family: "Rubik", sans-serif;
     font-size: 3rem;
     max-width: 1000px;
     color: #746d69;
@@ -21,4 +22,21 @@ header {
 }
 .hidden {
   display: none;
+}
+a {
+  margin-top: 30px;
+  padding: 15px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  text-decoration: none;
+  border: solid 2px;
+  border-color: #746d69;
+  color: #37383c;
+  text-transform: uppercase;
+}
+a:hover,
+a:focus { 
+ color: white;
+ background-color: #746d69;
 }
